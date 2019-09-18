@@ -3,7 +3,7 @@
 let nombre = "Ricardo Tapia";
 let edad = 23;
 
-const PERSONAJE = {
+const PERSONAJE:{ nombre:string, edad:number } = {
   nombre: nombre,
   edad: edad
 };
@@ -12,10 +12,10 @@ const PERSONAJE = {
 // Cree una interfaz que sirva para validar el siguiente objeto
 interface superHeroe {
   nombre: string,
-  artesMarciales: object
+  artesMarciales: string[]
 }
 
-var batman = {
+let batman:superHeroe = {
   nombre: "Bruno Díaz",
   artesMarciales: ["Karate","Aikido","Wing Chun","Jiu-Jitsu"]
 }
@@ -25,17 +25,19 @@ function resultadoDoble( a, b ){
   return (a + b) * 2
 }
 
-let resultadoDobleF = (a, b) => (a+b)*2;
+let resultadoDobleF = (a:number, b:number) => (a+b)*2;
 // Función con parametros obligatorios, opcionales y por defecto
 // donde NOMBRE = obligatorio
 //       PODER  = opcional
 //       ARMA   = por defecto = "arco"
-function getAvenger( nombre, arma = "arco", poder? ){
-  var mensaje;
+function getAvenger( nombre:string, arma:string = "arco", poder?:string ){
+  let mensaje:string;
   if( poder ){
-     mensaje = nombre + " tiene el poder de: " + poder + " y un arma: " + arma;
+    //  mensaje = nombre + " tiene el poder de: " + poder + " y un arma: " + arma;
+     mensaje = `${nombre} tiene el poder de: ${poder} y un arma: ${arma}`;
   }else{
-     mensaje = nombre + " tiene un " + poder
+    //  mensaje = nombre + " tiene un " + poder
+     mensaje = `${nombre} tiene un ${poder}`;
   }
 };
 
@@ -55,7 +57,7 @@ class Rectangulo{
         this.altura = altura;
     }
 
-    area(){
+    area():number{
         return this.base * this.altura;
     }
 }
