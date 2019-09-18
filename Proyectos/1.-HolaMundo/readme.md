@@ -10,7 +10,7 @@ Son clases normales con un decorador específico
 
 2. ¿Qué son las directivas estructurales?
 
-Son instrucciones que le dicen a la parte del html qué tiene que hacer, como las directivas *ngIf y *ngFor.
+Son instrucciones que agregan, eliminan o reemplazan elementos HTML en el template, como ejemplo están las directivas *ngIf y *ngFor.
 
 3. Uso de plunker para nuestra primera interacción con Angular.
 4. Trabajando de forma local un proyecto en Angular.
@@ -40,11 +40,10 @@ Son instrucciones que le dicen a la parte del html qué tiene que hacer, como la
     - tslint.json
         - Ayudas para escribir código más limpio.
 
-
-    
-
 6. Uso de Bootstrap 4 para nuestros estilos.
 7. Crear archivos .HTML para que se encarguen de la estructura visual de nuestros componentes.
 8. Crearemos una aplicación con 3 componentes re-utilizables.
-9. *ngFor y el *ngIf
+9. *ngFor y el *ngIf.
+- *ngFor.- Directiva que trabaja en base a arreglos (iteración)
+- *ngIf.- Directiva que trabaja en base a expresiones que den como resultado un verdadero y un falso.
 Al finalizar tendremos un examen teórico para afianzar los conocimientos.
