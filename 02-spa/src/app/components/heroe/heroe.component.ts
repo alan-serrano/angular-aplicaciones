@@ -15,7 +15,6 @@ export class HeroeComponent {
     constructor(private activatedRoute: ActivatedRoute, private heroesService: HeroesService) {
         // Regresa un observador
         this.activatedRoute.params.subscribe( params => {
-            console.log(params.id);
             this.heroe = this.heroesService.getHeroe(params.id);
         });
     }
