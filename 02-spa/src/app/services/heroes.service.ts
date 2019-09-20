@@ -61,6 +61,10 @@ export class HeroesService {
     getHeroes() {
         return this.heroes;
     }
+
+    getHeroe(i) {
+        return this.heroes[i];
+    }
 }
 
 
