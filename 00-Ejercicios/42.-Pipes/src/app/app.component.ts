@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     title = 'pipes';
     nombre = 'Ricardo';
+    nombreCompleto = 'aLan RiCardo Serrano pucheta';
     arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     PI = 3.14159265359;
     proporcion = 0.45679;
