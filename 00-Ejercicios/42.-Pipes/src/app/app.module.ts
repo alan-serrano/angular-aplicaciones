@@ -8,6 +8,8 @@ import { registerLocaleData } from '@angular/common'; // Fecha Español
 registerLocaleData(localeEs); // Fecha Español
 
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 
 
@@ -15,7 +17,9 @@ import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadoPipe
+    CapitalizadoPipe,
+    DomseguroPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule
